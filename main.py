@@ -16,15 +16,14 @@ start_message = """
 <b>👋Hello {}</b>
 <b>I am an AutoCaption bot</b>
 <b>All you have to do is add me to your channel and I will show you my power</b>
-<b>@Mo_Tech_YT</b>"""
+<b>@alkuppiya1</b>"""
 
 about_message = """
 <b>• Name : [AutoCaption V1](t.me/{username})</b>
-<b>• Developer : [Muhammed](https://github.com/PR0FESS0R-99)
+<b>• Developer : [ɪɴᴠɪꜱɪʙʟᴇ ᴇɪɴꜱᴛᴇɪɴ |ᴵᴱ ⚡️](https://t.me/invisible_einstein)
 <b>• Language : Python3</b>
 <b>• Library : Pyrogram v{version}</b>
-<b>• Updates : <a href=https://t.me/Mo_Tech_YT>Click Here</a></b>
-<b>• Source Code : <a href=https://github.com/PR0FESS0R-99/AutoCaptionBot-V1>Click Here</a></b>"""
+<b>• Updates : <a href=https://t.me/alkuppiya1>Click Here</a></b>"""
 
 @AutoCaptionBotV1.on_message(pyrogram.filters.private & pyrogram.filters.command(["start"]))
 def start_command(bot, update):
@@ -73,7 +72,7 @@ def get_file_details(update: pyrogram.types.Message):
 def start_buttons(bot, update):
   bot = bot.get_me()
   buttons = [[
-   pyrogram.types.InlineKeyboardButton("Updates", url="t.me/Mo_Tech_YT"),
+   pyrogram.types.InlineKeyboardButton("Updates", url="t.me/alkuppiya1"),
    pyrogram.types.InlineKeyboardButton("About 🤠", callback_data="about")
    ],[
    pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"http://t.me/{bot.username}?startchannel=true")
@@ -87,6 +86,6 @@ def about_buttons(bot, update):
   return pyrogram.types.InlineKeyboardMarkup(buttons)
 
 print("Telegram AutoCaption V1 Bot Start")
-print("Bot Created By https://github.com/PR0FESS0R-99")
+print("ɪɴᴠɪꜱɪʙʟᴇ ᴇɪɴꜱᴛᴇɪɴ |ᴵᴱ ⚡️")
 
 AutoCaptionBotV1.run()
